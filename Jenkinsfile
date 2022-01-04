@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_HUB_USERNAME = credentials('DOCKER_HUB_USERNAME')
         DOCKER_HUB_PASSWORD = credentials('DOCKER_HUB_PASSWORD')
-        CURRENT_COMMIT = getCommitHash()
+        CURRENT_COMMIT = "1"
     }
 
     stages {
@@ -21,11 +21,5 @@ pipeline {
                 sh 'docker logout'
             }
         }
-    }
-}
-
-def getCommitHash() {
-    node {
-        return sh(script: 'git rev-parse --short HEAD', returnStdout: true)
     }
 }
