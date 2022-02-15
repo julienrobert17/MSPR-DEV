@@ -12,13 +12,10 @@ pipeline {
             agent any
             when {
                 beforeAgent true
-                branch 'main'
+                branch 'develop'
             }
             steps {
-                sh 'echo $DOCKER_HUB_PASSWORD | docker login -u $DOCKER_HUB_USERNAME --password-stdin'
-                sh 'docker build -t $DOCKER_HUB_USERNAME/msprdev:$CURRENT_COMMIT .'
-                sh 'docker push $DOCKER_HUB_USERNAME/msprdev:$CURRENT_COMMIT'
-                sh 'docker logout'
+                sh 'echo Build'
             }
         }
     }
