@@ -1,0 +1,1 @@
+jar cfe Generator.jar Main *.class

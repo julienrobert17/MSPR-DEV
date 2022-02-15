@@ -1,0 +1,13 @@
+
+<link href="./styles/index.css" rel="stylesheet">
+<body>
+    <div class="main-agent">
+        <div class="infos">
+            <div class="id"><p>#</p></div>
+            <div class="pp"><img src="./asset/img/#.jpg"></div>    
+        </div>
+        <div class="checklist">
+#            <div class="row"><p>#</p><img src="./asset/img/check.png"></div>
+#        </div>
+    </div>
+</body>
