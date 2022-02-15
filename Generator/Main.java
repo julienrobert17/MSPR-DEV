@@ -61,7 +61,6 @@ public class Main {
                 AgentJson = AgentJson.substring(0, AgentJson.length() -2);
 
                 AgentJson += "]}";
-                 
 
                 fiche = fiche + templateSplitted[5];
 
