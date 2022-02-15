@@ -19,8 +19,9 @@ pipeline {
             }
         }
         stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+            dir ("./Generator/"){
+                // Execute your java file
+                bat "java -jar Generator.jar"
             }
         }
     }
