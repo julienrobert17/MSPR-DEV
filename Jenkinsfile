@@ -1,7 +1,7 @@
 pipeline {
     agent none 
 
-    environment {
+    environment {      
         //DOCKER_HUB_USERNAME = credentials('DOCKER_HUB_USERNAME')
         //DOCKER_HUB_PASSWORD = credentials('DOCKER_HUB_PASSWORD')
         CURRENT_COMMIT = "1"
@@ -9,13 +9,18 @@ pipeline {
 
     stages {
         stage('Build') {
-            agent any
-            when {
-                beforeAgent true
-                branch 'develop'
-            }
             steps {
-                sh 'echo Build'
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
