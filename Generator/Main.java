@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-
+        List<String> test = []
         List<String> agents = Files.readAllLines(Path.of("./ressources/staff.txt"));
 
         String filesTemplate = Files.readString(Path.of("./template/fiche.txt"));
