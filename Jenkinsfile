@@ -9,16 +9,18 @@ pipeline {
 
     stages {
         stage('Build') {
-            agent any
-            when {
-                beforeAgent true
-                branch 'main'
-            }
             steps {
-                sh 'echo $DOCKER_HUB_PASSWORD | docker login -u $DOCKER_HUB_USERNAME --password-stdin'
-                sh 'docker build -t $DOCKER_HUB_USERNAME/msprdev:$CURRENT_COMMIT .'
-                sh 'docker push $DOCKER_HUB_USERNAME/msprdev:$CURRENT_COMMIT'
-                sh 'docker logout'
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
