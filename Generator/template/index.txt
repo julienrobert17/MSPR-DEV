@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="./styles/index.css">
+
+<body>
+    <div class="main-home">
+        <div class="logo">
+            <img src="./asset/img/Capture.PNG">
+        </div>
+        <div class="staff">
+            <p>Agents :</p>
+            <div class="staff-list">
+#                <a href="#.html">#</a>
+#            </div>
+        </div>
+    </div>
+</body>

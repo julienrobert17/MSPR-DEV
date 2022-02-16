@@ -1,0 +1,1 @@
+{"prenom": "Berthier","nom": "Corinne","role": "Surveillance entrepôt","mdp": "pjbafjflzinflzkefjzf","objets": ["kit", "lampe", "lacrymo"]}
