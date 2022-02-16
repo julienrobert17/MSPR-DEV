@@ -9,6 +9,10 @@ pipeline {
 
     stages {
         stage('Build') {
+            when {
+                beforeAgent true,
+                branch 'main',
+            }
             steps {
                 echo 'Building..'
             }
