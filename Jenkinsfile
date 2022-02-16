@@ -1,6 +1,6 @@
 pipeline {
     //test
-    agent none 
+    agent any
 
     environment {      
         //DOCKER_HUB_USERNAME = credentials('DOCKER_HUB_USERNAME')
