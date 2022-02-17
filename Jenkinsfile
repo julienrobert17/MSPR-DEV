@@ -7,7 +7,6 @@ pipeline {
         //DOCKER_HUB_PASSWORD = credentials('DOCKER_HUB_PASSWORD')
         CURRENT_COMMIT = "1"
     }
-
     stages {
         stage('Build') {
             when {
